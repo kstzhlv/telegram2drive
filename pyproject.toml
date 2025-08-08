@@ -1,0 +1,19 @@
+[project]
+name = "telegram2drive"
+version = "0.1.0"
+description = "Send audio files from a group chat to Google Drive automatically."
+authors = [
+    {name = "codeling", email = "you@gmail.com"},
+]
+dependencies = ["pyrogram>=2.0.106", "tgcrypto>=1.2.5", "google-api-python-client>=2.177.0", "google-auth-httplib2>=0.2.0", "google-auth-oauthlib>=1.2.2"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
