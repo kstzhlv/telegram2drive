@@ -31,4 +31,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import logging
+
+    logging.basicConfig(level=logging.INFO)
+    try:
+        main()
+    except Exception as e:
+        print(f"Fatal error: {e}")
